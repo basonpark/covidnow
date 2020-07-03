@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     width: 100 + '%',
-    height: 57,
+    height: 80,
+    overflow: 'visible'
   },
 });

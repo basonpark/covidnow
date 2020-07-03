@@ -50,7 +50,7 @@ export default function RNSRadioGroup({
                 <View
                   style={{
                     height: 5,
-                    borderBottomColor: colors.primary,
+                    borderBottomColor: colors.pressed,
                     borderBottomWidth: 3,
                     position: 'absolute',
                   }}
@@ -67,7 +67,7 @@ const styles = {
   container: {
     flex: 1,
     flexDirection: 'row',
-    borderColor: colors.primary,
+    borderColor: colors.pressed,
     borderWidth: 1,
     borderRadius: 5,
   },
@@ -92,7 +92,7 @@ const styles = {
     borderBottomColor: colors.primary,
   },
   text: {
-    color: colors.primary,
+    color: colors.pressed,
   },
   textUnderline: {
     color: '#a6a6a6',

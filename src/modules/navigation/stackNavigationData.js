@@ -5,12 +5,12 @@ import TabNavigator from './MainTabNavigator';
 import GalleryScreen from '../gallery/GalleryViewContainer';
 import AvailableInFullVersion from '../../modules/availableInFullVersion/AvailableInFullVersionViewContainer';
 
-// import ProfileScreen from '../profile/ProfileViewContainer';
-// import ArticleScreen from '../article/ArticleViewContainer';
-// import ChatScreen from '../chat/ChatViewContainer';
-// import MessagesScreen from '../chat/MessagesViewContainer';
-// import ChartsScreen from '../charts/ChartsViewContainer';
-// import AuthScreen from '../auth/AuthViewContainer';
+import StatsScreen from '../categories/stats/StatsViewContainer';
+import InfoScreen from '../categories/info/InfoViewContainer';
+import TestingScreen from '../categories/testing/TestingViewContainer';
+import FoodScreen from '../categories/food/FoodViewContainer';
+import WorkScreen from '../categories/work/WorkViewContainer';
+import HousingScreen from '../categories/housing/HousingViewContainer';
 
 import { colors, fonts } from '../../styles';
 
@@ -37,7 +37,7 @@ const headerBackground = require('../../../assets/images/topBarBg.png');
 
 const StackNavigationData = [
   {
-    name: 'React Native Starter',
+    name: 'COVIDNOW',
     component: TabNavigator,
     headerLeft: null,
     headerBackground: { source: headerBackground },
@@ -48,8 +48,8 @@ const StackNavigationData = [
     },
   },
   {
-    name: 'Charts',
-    component: AvailableInFullVersion,
+    name: 'Stats',
+    component: StatsScreen,
     headerLeft: headerLeftComponent,
     headerBackground: { source: headerBackground },
     headerTitleStyle: {
@@ -59,8 +59,8 @@ const StackNavigationData = [
     },
   },
   {
-    name: 'Gallery',
-    component: GalleryScreen,
+    name: 'Info',
+    component: InfoScreen,
     headerLeft: headerLeftComponent,
     headerBackground: { source: headerBackground },
     headerTitleStyle: {
@@ -70,8 +70,8 @@ const StackNavigationData = [
     },
   },
   {
-    name: 'Profile',
-    component: AvailableInFullVersion,
+    name: 'Testing',
+    component: TestingScreen,
     headerLeft: headerLeftComponent,
     headerBackground: { source: headerBackground },
     headerTitleStyle: {
@@ -81,8 +81,8 @@ const StackNavigationData = [
     },
   },
   {
-    name: 'Article',
-    component: AvailableInFullVersion,
+    name: 'Food',
+    component: FoodScreen,
     headerLeft: headerLeftComponent,
     headerBackground: { source: headerBackground },
     headerTitleStyle: {
@@ -92,8 +92,8 @@ const StackNavigationData = [
     },
   },
   {
-    name: 'Chat',
-    component: AvailableInFullVersion,
+    name: 'Work',
+    component: WorkScreen,
     headerLeft: headerLeftComponent,
     headerBackground: { source: headerBackground },
     headerTitleStyle: {
@@ -103,8 +103,8 @@ const StackNavigationData = [
     },
   },
   {
-    name: 'Messages',
-    component: AvailableInFullVersion,
+    name: 'Housing',
+    component: HousingScreen,
     headerLeft: headerLeftComponent,
     headerBackground: { source: headerBackground },
     headerTitleStyle: {

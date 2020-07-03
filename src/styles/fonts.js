@@ -1,5 +1,5 @@
 export default {
-  primaryLight: 'Lato-Light',
+  primaryLight: 'Lato-Thin',
   primaryRegular: 'Lato-Regular',
   primaryBold: 'Lato-Bold',
   primarySemiBold: 'Lato-SemiBold',

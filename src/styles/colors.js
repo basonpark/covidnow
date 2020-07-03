@@ -1,5 +1,5 @@
 const blueVersion = {
-  primary: '#555CC4',
+  primary: 'white',
   primaryLight: '#829BF8',
   primaryGradientStart: '#4f44b6',
   primaryGradientEnd: '#4f44b6',
@@ -18,6 +18,7 @@ const blueVersion = {
   black: '#000000',
   green: '#6DD0A3',
   yellow: '#ffc247',
+  pressed: '#00AEEF'
 };
 
 export default blueVersion;

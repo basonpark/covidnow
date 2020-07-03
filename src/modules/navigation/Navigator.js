@@ -22,21 +22,13 @@ const drawerData = [
     icon: iconHome,
   },
   {
-    name: 'Calendar',
-    icon: iconCalendar,
-  },
-  {
-    name: 'Grids',
+    name: 'News',
     icon: iconGrids,
   },
   {
-    name: 'Pages',
+    name: 'Resources',
     icon: iconPages,
-  },
-  {
-    name: 'Components',
-    icon: iconComponents,
-  },
+  }
 ];
 
 const Drawer = createDrawerNavigator();
@@ -44,17 +36,6 @@ const Drawer = createDrawerNavigator();
 function CustomDrawerContent(props) {
   return (
     <DrawerContentScrollView {...props} style={{padding: 0}}>
-      <View style={styles.avatarContainer}>
-        <Image
-          style={styles.avatar}
-          source={require('../../../assets/images/drawer/user.png')}
-        />
-        <View style={{ paddingLeft: 15 }}>
-          <Text style={styles.userName}>John Doe</Text>
-          <Text style={{ color: '#4BC1FD' }}>Johndoe@gmail.com</Text>
-        </View>
-      </View>
-      <View style={styles.divider} />
       {drawerData.map((item, idx) => (
         <DrawerItem
           key={`drawer_item-${idx+1}`}
@@ -109,28 +90,5 @@ const styles = StyleSheet.create({
   menuLabelFlex: {
     display: 'flex',
     flexDirection: 'row'
-  },
-  userName: {
-    color: '#fff',
-    fontSize: 18
-  },
-  divider: {
-    borderBottomColor: 'white',
-    opacity: 0.2,
-    borderBottomWidth: 1,
-    margin: 15,
-  },
-  avatar: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-  },
-  avatarContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    margin: 20,
-    marginBottom: 10
   },
 });

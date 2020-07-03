@@ -5,11 +5,11 @@ import { colors } from '../../styles';
 
 import tabNavigationData from './tabNavigationData';
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator()
 
 export default function BottomTabs() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator initialRouteName='Home'>
       {tabNavigationData.map((item, idx) => (
         <Tab.Screen 
           key={`tab_item${idx+1}`}
@@ -25,7 +25,7 @@ export default function BottomTabs() {
               />
             </View>
           ),
-          tabBarLabel: ({ focused }) => <Text style={{ fontSize: 12, color: focused ? colors.primary : colors.gray }}>{item.name}</Text>
+          tabBarLabel: ({ focused }) => <Text style={{ fontSize: 12, color: focused ? colors.pressed : colors.gray }}>{item.name}</Text>
         }} 
         />        
       ))}
@@ -41,12 +41,14 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
     borderBottomColor: colors.white,
     paddingHorizontal: 10,
+    paddingTop: 15,
+    marginBottom: 10
   },
   tabBarIcon: {
-    width: 23,
-    height: 23,
+    width: 25,
+    height: 25,
   },
   tabBarIconFocused: {
-    tintColor: colors.primary,
+    tintColor: colors.pressed,
   },
 });

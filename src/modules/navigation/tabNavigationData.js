@@ -1,41 +1,30 @@
 import HomeScreen from '../home/HomeViewContainer';
-import CalendarScreen from '../calendar/CalendarViewContainer';
+import NewsScreen from '../news/NewsViewContainer';
 import GridsScreen from '../grids/GridsViewContainer';
-import PagesScreen from '../pages/PagesViewContainer';
-import ComponentsScreen from '../components/ComponentsViewContainer';
+import ContactsScreen from '../contacts/ContactsViewContainer';
 
 const iconHome = require('../../../assets/images/tabbar/home.png');
-const iconCalendar = require('../../../assets/images/tabbar/calendar.png');
-const iconGrids = require('../../../assets/images/tabbar/grids.png');
+const newsIcon = require('../../../assets/images/tabbar/newsIcon.png');
 const iconPages = require('../../../assets/images/tabbar/pages.png');
-const iconComponents = require('../../../assets/images/tabbar/components.png');
+const iconGrids = require('../../../assets/images/tabbar/grids.png');
+
 
 const tabNavigationData = [
   {
+    name: 'News',
+    component: NewsScreen,
+    icon: newsIcon,
+  },
+  {
     name: 'Home',
     component: HomeScreen,
-    icon: iconHome,
+    icon: iconHome
   },
   {
-    name: 'Calendar',
-    component: CalendarScreen,
-    icon: iconCalendar,
-  },
-  {
-    name: 'Grids',
-    component: GridsScreen,
+    name: 'Resources',
+    component: ContactsScreen,
     icon: iconGrids,
-  },
-  {
-    name: 'Pages',
-    component: PagesScreen,
-    icon: iconPages,
-  },
-  {
-    name: 'Components',
-    component: ComponentsScreen,
-    icon: iconComponents,
-  },
+  }
 ];
 
 export default tabNavigationData;
